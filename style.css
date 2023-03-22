@@ -74,3 +74,12 @@
   bottom: -30px;
   right: -325px;
 }
+
+.media-icon {
+  transition: all 70ms;
+  cursor: pointer;
+}
+
+.media-icon:hover {
+  transform: scale(1.2);
+}
