@@ -17,6 +17,10 @@
   background-color: #3c3a39;
 }
 
+.link-none {
+  text-decoration: none;
+}
+
 .logo {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -61,7 +65,7 @@
   color: #fff;
 }
 
-.social-media-container {
+.social-media-ul {
   display: flex;
   align-items: center;
   gap: 21px;
@@ -82,4 +86,8 @@
 
 .media-icon:hover {
   transform: scale(1.2);
+}
+
+.list-style-none {
+  list-style: none;
 }
