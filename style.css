@@ -21,6 +21,15 @@
   text-decoration: none;
 }
 
+.nav-toggle-btn {
+  transition: all 70ms;
+}
+
+.nav-toggle-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 .logo {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -188,6 +197,7 @@
   line-height: 24px;
   font-size: 17px;
   cursor: pointer;
+  transition: all 70ms
 }
 
 .white {
@@ -290,4 +300,8 @@
 .list-item {
   font-weight: 400;
   font-size: 22px;
+}
+
+.see-btn:hover {
+  background-color: #bb5003;
 }
