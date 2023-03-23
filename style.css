@@ -220,14 +220,18 @@
 }
 
 .about-container {
+  overflow: hidden;
   background-color: #1c1a19;
+  background-image: url(/assets/icons/about-svg1.svg);
+  background-repeat: no-repeat;
+  background-position-x: 215px;
+  background-position-y: 284px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 24px;
   padding: 120px 24px;
-  position: relative;
 }
 
 .about-title {
@@ -243,12 +247,6 @@
   font-size: 16px;
   font-weight: 400;
   font-family: "Inter", sans-serif;
-}
-
-.svg-about {
-  position: absolute;
-  left: 215px;
-  top: 284px;
 }
 
 .divisor {
