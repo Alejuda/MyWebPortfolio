@@ -125,7 +125,7 @@
 .grid-container {
   display: grid;
   width: calc(100% - 48px);
-  margin: 0px 24px;
+  margin: 0 24px;
   max-width: 360px;
   grid-template-columns: 1fr;
   gap: 24px;
@@ -197,7 +197,7 @@
   line-height: 24px;
   font-size: 17px;
   cursor: pointer;
-  transition: all 70ms
+  transition: all 70ms;
 }
 
 .white {
@@ -220,7 +220,7 @@
 }
 
 .about-container {
-  background-color: #1C1A19;
+  background-color: #1c1a19;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -234,12 +234,12 @@
   font-family: "Crete Round", serif;
   font-size: 72px;
   line-height: 88px;
-  color: #FF6B00;
+  color: #ff6b00;
   font-weight: 400;
 }
 
 .about-description {
-  color: #F4F5F7;
+  color: #f4f5f7;
   font-size: 16px;
   font-weight: 400;
   font-family: "Inter", sans-serif;
