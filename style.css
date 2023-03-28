@@ -306,7 +306,6 @@
 
 .form-container {
   padding: 70px 24px;
-  background-color: #E5E5E5;
 }
 
 .section-title-2 {
@@ -338,7 +337,7 @@
 .textarea-input-control{
   width: 100%;
   height: 114px;
-  background-color: transparent;
+  background-color: #FBF8F7;
   padding: 12px;
   resize: none;
   border: none;
@@ -364,7 +363,6 @@
   width: 100%;
   height: 108px;
   padding: 25px;
-  background-color: #E5E5E5;
   border-top: 1px solid #a6a8ad;
 }
 
