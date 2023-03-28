@@ -311,7 +311,7 @@
 .section-title-2 {
   border-bottom: none;
   font-family: "Inter", sans-serif;
-  color: #172B4D;
+  color: #172b4d;
   text-align: center;
   font-size: 32px;
   line-height: 44px;
@@ -330,7 +330,7 @@
   width: 100%;
   background-color: transparent;
   border: none;
-  border-bottom: solid 1px #DBD8D7;
+  border-bottom: solid 1px #dbd8d7;
   padding: 14px;
 }
 
@@ -340,10 +340,10 @@
   font-size: 15px;
 }
 
-.textarea-input-control{
+.textarea-input-control {
   width: 100%;
   height: 114px;
-  background-color: #FBF8F7;
+  background-color: #fbf8f7;
   padding: 12px;
   resize: none;
   border: none;
@@ -378,6 +378,4 @@
   justify-content: center;
   align-items: center;
   gap: 21px;
-  margin: auto;
 }
-
