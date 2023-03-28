@@ -340,6 +340,16 @@
   height: 114px;
   background-color: transparent;
   padding: 12px;
+  resize: none;
+  border: none;
+}
+
+.textarea-input-control::placeholder {
+  color: black;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: italic;
+  font-family: "Inter", sans-serif;
 }
 
 .submit-btn {
@@ -355,7 +365,7 @@
   height: 108px;
   padding: 25px;
   background-color: #E5E5E5;
-  border-top: 1px solid #DFE1E6;
+  border-top: 1px solid #a6a8ad;
 }
 
 .social-media-ul-footer {
