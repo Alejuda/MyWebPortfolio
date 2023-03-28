@@ -198,8 +198,8 @@
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </h2>
-      <form class="form" method="post">
-        <input class="input-control" type="text" id="name" name="name" placeholder="Full name" required/>
+      <form class="form" action="https://formspree.io/f/xbjezjap" method="post">
+        <input class="input-control" type="text" id="name" name="name" placeholder="Full name" required maxlength="30"/>
         <input
         class="input-control"
           type="emai"
@@ -207,7 +207,7 @@
           name="email"
           placeholder="Email address"
          required/>
-        <textarea class="textarea-input-control" name="content" id="content" placeholder="Write me something..."></textarea>
+        <textarea class="textarea-input-control" name="content" id="content" required placeholder="Write me something..." maxlength="500"></textarea>
         <button class="see-btn submit-btn" type="submit">Get in touch</button>
       </form>
     </section>
