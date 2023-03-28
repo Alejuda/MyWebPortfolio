@@ -334,6 +334,12 @@
   padding: 14px;
 }
 
+.input-control ::placeholder {
+  font-family: "Inter", sans-serif;
+  color: #979493;
+  font-size: 15px;
+}
+
 .textarea-input-control{
   width: 100%;
   height: 114px;
