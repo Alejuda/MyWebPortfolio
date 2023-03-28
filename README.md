@@ -134,6 +134,11 @@ To run the project, open the index.html file on your web browser or with live-se
 
 ## 🤝 Contributing <a name="contributing"></a>
 
+> big thanks to my coding partners:
+
+- GitHub: [@JuanDiegoGuerra](https://github.com/JuanDiegoGuerra)
+- GitHub: [@enmanuelbayen](https://github.com/enmanuelbayen)
+
 Contributions, issues, and feature requests are welcome!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
