@@ -289,6 +289,14 @@
   align-self: center;
 }
 
+.divisor-2 {
+  display: none;
+  width: 100%;
+  height: 1px;
+  background-color: #212121;
+  align-self: center;
+}
+
 .habilities-containes {
   align-self: center;
   display: flex;
@@ -336,6 +344,7 @@
 .list-item {
   font-weight: 400;
   font-size: 22px;
+  text-align: center; 
 }
 
 .see-btn:hover {
@@ -350,6 +359,10 @@
 }
 
 .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
   padding: 70px 24px;
 }
 
@@ -360,7 +373,6 @@
   text-align: center;
   font-size: 32px;
   line-height: 44px;
-  margin-bottom: 50px;
   max-width: 455px;
 }
 
@@ -479,6 +491,14 @@
   /*--------about---------*/
   .about-container {
     padding: 130px 142px;
+    background-image: url(./assets/icons/illustration-about\ me-desktop1.svg);
+    background-position: 750px 100px;
+  }
+
+  .about-description {
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 566px;
   }
 
   .habilitie-flex-container {
@@ -500,20 +520,56 @@
     justify-content: flex-start;
   }
 
+  .list-item {
+    text-align: left;
+  }
+
+  /*--------works---------*/
+
+  .works-container {
+    padding: 130px 142px;
+  }
+
+  .divisor-2 {
+    display: block;
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .section-title {
+    border-bottom: none;
+    margin: 0;
+  }
+
+  .work-title-container {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    width: 100%;
+  }
+
   /*--------form responsive---------*/
   .form-container {
-    display: flex;
+    flex-direction: row;
     gap: 24px;
     justify-content: center;
     padding: 130px 142px;
   }
   
   .section-title-2 {
+    align-self: flex-start;
     color: #262626;
     text-align: left;
     font-size: 40px;
     line-height: 52px;
     font-family: "Inter", sans-serif;
+    flex-grow: 2;
+    flex-shrink: 2;
+  }
+
+  .form {
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 
   .submit-btn {
