@@ -301,7 +301,14 @@
 }
 
 .see-btn:hover {
-  background-color: #bb5003;
+  background-color: #FFF5E1;
+  outline: 1px solid #F55800;
+  color: #F55800;
+}
+
+.see-btn:active {
+  background-color: #E05304;
+  color: #F4F1F0;
 }
 
 .form-container {
