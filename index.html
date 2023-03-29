@@ -13,6 +13,16 @@
       <nav class="nav-toggle-btn">
         <img src="./assets/icons/Icon - Menu.svg" alt="Menu icon" />
       </nav>
+      <nav class="desktop-nav-container">
+        <ul class="desktop-nav">
+          <li class="desktop-nav-item"> <a class="link-none white" href="#"> Portfolio</li></a>
+          <li class="desktop-nav-item"> <a class="link-none white" href="#"> About</li></a>
+          <li class="desktop-nav-item"> <a class="link-none white" href="#"> Contact</li></a>
+          <li class="desktop-nav-item"> <a class="link-none white" href="#"> 
+            <img src="./assets/icons/Icon - Mail.svg" alt="Mail me icon" />
+          </a></li>
+        </ul>
+      </nav>
     </header>
     <section class="home">
       <h1 class="home-title">
@@ -155,42 +165,47 @@
         you see and have a project you need coded, don’t hesitate to contact me.
       </p>
       <button type="button" class="see-btn">Get my resume</button>
-      
+
       <div class="divisor"></div>
       <div class="habilities-containes">
-        <div class="habilitie-title">
-          <img src="./assets/icons/Rectangle 55.svg" alt="" />
-          <h2 class="habilitie-type">Language</h2>
+        <div class="habilitie-flex-container">
+          <div class="habilitie-title">
+            <img src="./assets/icons/Rectangle 55.svg" alt="" />
+            <h2 class="habilitie-type">Language</h2>
+          </div>
+          <ul class="habilitie-list">
+            <li class="list-item">JavaScript</li>
+            <li class="list-item">Ruby</li>
+            <li class="list-item">HTML</li>
+            <li class="list-item">CSS</li>
+          </ul>
         </div>
-        <ul class="habilitie-list">
-          <li class="list-item">JavaScript</li>
-          <li class="list-item">Ruby</li>
-          <li class="list-item">HTML</li>
-          <li class="list-item">CSS</li>
-        </ul>
 
-        <div class="habilitie-title">
-          <img src="./assets/icons/Rectangle 56.svg" alt="" />
-          <h2 class="habilitie-type">Frameworks</h2>
+        <div class="habilitie-flex-container">
+          <div class="habilitie-title">
+            <img src="./assets/icons/Rectangle 56.svg" alt="" />
+            <h2 class="habilitie-type">Frameworks</h2>
+          </div>
+          <ul class="habilitie-list">
+            <li class="list-item">React.js</li>
+            <li class="list-item">Ruby on Rails</li>
+            <li class="list-item">RSpec</li>
+            <li class="list-item">Capybara</li>
+          </ul>
         </div>
-        <ul class="habilitie-list">
-          <li class="list-item">React.js</li>
-          <li class="list-item">Ruby on Rails</li>
-          <li class="list-item">RSpec</li>
-          <li class="list-item">Capybara</li>
-        </ul>
-
-        <div class="habilitie-title">
-          <img src="./assets/icons/Rectangle 57.svg" alt="" />
-          <h2 class="habilitie-type">Skills</h2>
+        <div class="habilitie-flex-container">
+          <div class="habilitie-title">
+            <img src="./assets/icons/Rectangle 57.svg" alt="" />
+            <h2 class="habilitie-type">Skills</h2>
+          </div>
+          <ul class="habilitie-list">
+            <li class="list-item">Database Management</li>
+            <li class="list-item">Version Control</li>
+            <li class="list-item">CLI</li>
+            <li class="list-item">API Design</li>
+            <li class="list-item">Web Development</li>
+          </ul>
         </div>
-        <ul class="habilitie-list">
-          <li class="list-item">Database Management</li>
-          <li class="list-item">Version Control</li>
-          <li class="list-item">CLI</li>
-          <li class="list-item">API Design</li>
-          <li class="list-item">Web Development</li>
-        </ul>
       </div>
     </section>
     <section class="form-container">
@@ -199,20 +214,35 @@
         chat please get in touch.
       </h2>
       <form class="form" action="https://formspree.io/f/xbjezjap" method="post">
-        <input class="input-control" type="text" id="name" name="name" placeholder="Full name" required maxlength="30"/>
         <input
-        class="input-control"
+          class="input-control"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Full name"
+          required
+          maxlength="30"
+        />
+        <input
+          class="input-control"
           type="email"
           id="email"
           name="email"
           placeholder="Email address"
-         required/>
-        <textarea class="textarea-input-control" name="content" id="content" required placeholder="Write me something..." maxlength="500"></textarea>
+          required
+        />
+        <textarea
+          class="textarea-input-control"
+          name="content"
+          id="content"
+          required
+          placeholder="Write me something..."
+          maxlength="500"
+        ></textarea>
         <button class="see-btn submit-btn" type="submit">Get in touch</button>
       </form>
     </section>
     <footer class="footer-container">
-
       <ul class="social-media-ul-footer">
         <li class="list-style-none">
           <img
@@ -250,7 +280,6 @@
           />
         </li>
       </ul>
-
     </footer>
   </body>
 </html>

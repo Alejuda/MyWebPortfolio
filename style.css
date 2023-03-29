@@ -30,6 +30,30 @@
   transform: scale(1.2);
 }
 
+.desktop-nav-container {
+  color: #fff;
+  display: none;
+}
+
+.desktop-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.desktop-nav-item {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  transition: all 100ms;
+}
+
+.desktop-nav-item:hover {
+  transform: scale(1.1);
+}
+
 .logo {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -268,6 +292,12 @@
   text-align: center;
 }
 
+.habilitie-flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
 .habilitie-title {
   width: 100%;
   margin: 10px 0;
@@ -323,6 +353,7 @@
   font-size: 32px;
   line-height: 44px;
   margin-bottom: 50px;
+  max-width: 455px;
 }
 
 .form {
@@ -331,6 +362,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 25px;
+  max-width: 684px;
 }
 
 .input-control {
@@ -385,4 +417,71 @@
   justify-content: center;
   align-items: center;
   gap: 21px;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    height: 72px;
+    padding: 0 70px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-toggle-btn {
+    display: none;
+  }
+
+  .desktop-nav-container {
+    display: block;
+  }
+  /*--------form responsive---------*/
+  .about-container {
+    padding: 130px 142px;
+  }
+
+  .habilitie-flex-container {
+    align-items: stretch;
+  }
+
+  .habilities-containes {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1155px;
+  }
+
+  .habilitie-list {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .habilitie-title {
+    justify-content: flex-start;
+  }
+
+  /*--------form responsive---------*/
+  .form-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding: 130px 142px;
+  }
+  
+  .section-title-2 {
+    color: #262626;
+    text-align: left;
+    font-size: 40px;
+    line-height: 52px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .submit-btn {
+    margin: 0 0 78px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-container {
+    padding: 0 154px;
+  }
 }
