@@ -84,6 +84,13 @@
   overflow: hidden;
 }
 
+.home-text-container {
+  max-width: 565px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .home-title {
   color: #ff6b00;
   font-size: 56px;
@@ -442,12 +449,9 @@
     height: 800px;
   }
   .home-text-container {
-    max-width: 565px;
     margin-left: 143px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
   }
+
   .home-title {
     font-size: 72px;
     line-height: 81.5px;
