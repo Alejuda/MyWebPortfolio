@@ -13,8 +13,19 @@
       <nav class="nav-toggle-btn">
         <img src="./assets/icons/Icon - Menu.svg" alt="Menu icon" />
       </nav>
+      <nav class="desktop-nav-container">
+        <ul class="desktop-nav">
+          <li class="desktop-nav-item"> <a class="link-none white" href="#portfolio-section"> Portfolio</li></a>
+          <li class="desktop-nav-item"> <a class="link-none white" href="#about-section"> About</li></a>
+          <li class="desktop-nav-item"> <a class="link-none white" href="#contact-section"> Contact</li></a>
+          <li class="desktop-nav-item"> <a class="link-none white" href="#"> 
+            <img src="./assets/icons/Icon - Mail.svg" alt="Mail me icon" />
+          </a></li>
+        </ul>
+      </nav>
     </header>
     <section class="home">
+      <div class="home-text-container">
       <h1 class="home-title">
         Hey there. <br />
         I'm Nacho.
@@ -25,6 +36,7 @@
         my work and experience! If you like what you see and have a project you
         need coded, don't hesitate to contact me.
       </p>
+      </div>
       <ul class="social-media-ul">
         <li class="list-style-none">
           <img
@@ -68,11 +80,14 @@
         alt=""
       />
     </section>
-    <section class="works-container">
-      <h2 class="section-title">My Recent Works</h2>
+    <section class="works-container" id="portfolio-section">
+      <div class="work-title-container">
+        <h2 class="section-title">My Recent Works</h2>
+        <div class="divisor-2"></div>
+      </div>
       <div class="grid-container">
-        <div class="card-container">
-          <img
+        <div class="card-container first-work">
+          <img class="first-work-img"
             src="./assets/img/Img Placeholder.png"
             alt="image of my project"
           />
@@ -100,8 +115,8 @@
           </div>
         </div>
 
-        <div class="card-container back-img">
-          <div class="text-container margin-x-13">
+        <div class="card-container back-img second-work padding-0">
+          <div class="text-container margin-x-13 display-none-desktop">
             <h3 class="card-title white">Profesional Art Printing Data</h3>
             <p class="card-description white">
               A daily selection of privately personalized reads; no accounts or
@@ -113,7 +128,35 @@
               <li class="tag-description-2">Ruby</li>
             </ul>
           </div>
-          <button type="button" class="see-btn wide">See project</button>
+          <button type="button" class="see-btn wide align-end">See project</button>
+        </div>
+        <div class="card-container back-img img-availability">
+          <div class="text-container margin-x-13">
+            <h3 class="card-title white">Data Dashboard <br> Healthcare</h3>
+            <p class="card-description white">
+              A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.
+            </p>
+            <ul class="tags list-style-none">
+              <li class="tag-description-2">HTML</li>
+              <li class="tag-description-2">Bootstrap</li>
+              <li class="tag-description-2">Ruby</li>
+            </ul>
+          </div>
+          <button type="button" class="see-btn wide display-none-desktop">See project</button>
+        </div>
+        <div class="card-container back-img img-ball">
+          <div class="text-container margin-x-13">
+            <h3 class="card-title white">Website Portfolio</h3>
+            <p class="card-description white">
+              A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.
+            </p>
+            <ul class="tags list-style-none">
+              <li class="tag-description-2">HTML</li>
+              <li class="tag-description-2">Bootstrap</li>
+              <li class="tag-description-2">Ruby</li>
+            </ul>
+          </div>
+          <button type="button" class="see-btn wide display-none-desktop">See project</button>
         </div>
         <div class="card-container back-img">
           <div class="text-container margin-x-13">
@@ -128,14 +171,13 @@
               <li class="tag-description-2">Ruby</li>
             </ul>
           </div>
-          <button type="button" class="see-btn wide">See project</button>
+          <button type="button" class="see-btn wide display-none-desktop">See project</button>
         </div>
-        <div class="card-container back-img">
+        <div class="card-container back-img img-availability">
           <div class="text-container margin-x-13">
-            <h3 class="card-title white">Profesional Art Printing Data</h3>
+            <h3 class="card-title white">Data Dashboard <br> Healthcare</h3>
             <p class="card-description white">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. Has been the industry's standard.
+              A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.
             </p>
             <ul class="tags list-style-none">
               <li class="tag-description-2">HTML</li>
@@ -143,11 +185,25 @@
               <li class="tag-description-2">Ruby</li>
             </ul>
           </div>
-          <button type="button" class="see-btn wide">See project</button>
+          <button type="button" class="see-btn wide display-none-desktop">See project</button>
+        </div>
+        <div class="card-container back-img img-ball">
+          <div class="text-container margin-x-13">
+            <h3 class="card-title white">Website Portfolio </h3>
+            <p class="card-description white">
+              A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.
+            </p>
+            <ul class="tags list-style-none">
+              <li class="tag-description-2">HTML</li>
+              <li class="tag-description-2">Bootstrap</li>
+              <li class="tag-description-2">Ruby</li>
+            </ul>
+          </div>
+          <button type="button" class="see-btn wide display-none-desktop">See project</button>
         </div>
       </div>
     </section>
-    <section class="about-container">
+    <section id="about-section" class="about-container">
       <h2 class="about-title">About me</h2>
       <p class="about-description">
         Hello I’m a software developer! I can help you build a product , feature
@@ -155,64 +211,84 @@
         you see and have a project you need coded, don’t hesitate to contact me.
       </p>
       <button type="button" class="see-btn">Get my resume</button>
-      
+
       <div class="divisor"></div>
       <div class="habilities-containes">
-        <div class="habilitie-title">
-          <img src="./assets/icons/Rectangle 55.svg" alt="" />
-          <h2 class="habilitie-type">Language</h2>
+        <div class="habilitie-flex-container">
+          <div class="habilitie-title">
+            <img src="./assets/icons/Rectangle 55.svg" alt="" />
+            <h2 class="habilitie-type">Language</h2>
+          </div>
+          <ul class="habilitie-list">
+            <li class="list-item">JavaScript</li>
+            <li class="list-item">Ruby</li>
+            <li class="list-item">HTML</li>
+            <li class="list-item">CSS</li>
+          </ul>
         </div>
-        <ul class="habilitie-list">
-          <li class="list-item">JavaScript</li>
-          <li class="list-item">Ruby</li>
-          <li class="list-item">HTML</li>
-          <li class="list-item">CSS</li>
-        </ul>
 
-        <div class="habilitie-title">
-          <img src="./assets/icons/Rectangle 56.svg" alt="" />
-          <h2 class="habilitie-type">Frameworks</h2>
+        <div class="habilitie-flex-container">
+          <div class="habilitie-title">
+            <img src="./assets/icons/Rectangle 56.svg" alt="" />
+            <h2 class="habilitie-type">Frameworks</h2>
+          </div>
+          <ul class="habilitie-list">
+            <li class="list-item">React.js</li>
+            <li class="list-item">Ruby on Rails</li>
+            <li class="list-item">RSpec</li>
+            <li class="list-item">Capybara</li>
+          </ul>
         </div>
-        <ul class="habilitie-list">
-          <li class="list-item">React.js</li>
-          <li class="list-item">Ruby on Rails</li>
-          <li class="list-item">RSpec</li>
-          <li class="list-item">Capybara</li>
-        </ul>
-
-        <div class="habilitie-title">
-          <img src="./assets/icons/Rectangle 57.svg" alt="" />
-          <h2 class="habilitie-type">Skills</h2>
+        <div class="habilitie-flex-container">
+          <div class="habilitie-title">
+            <img src="./assets/icons/Rectangle 57.svg" alt="" />
+            <h2 class="habilitie-type">Skills</h2>
+          </div>
+          <ul class="habilitie-list">
+            <li class="list-item">Database Management</li>
+            <li class="list-item">Version Control</li>
+            <li class="list-item">CLI</li>
+            <li class="list-item">API Design</li>
+            <li class="list-item">Web Development</li>
+          </ul>
         </div>
-        <ul class="habilitie-list">
-          <li class="list-item">Database Management</li>
-          <li class="list-item">Version Control</li>
-          <li class="list-item">CLI</li>
-          <li class="list-item">API Design</li>
-          <li class="list-item">Web Development</li>
-        </ul>
       </div>
     </section>
-    <section class="form-container">
+    <section class="form-container" id="contact-section">
       <h2 class="section-title-2">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </h2>
       <form class="form" action="https://formspree.io/f/xbjezjap" method="post">
-        <input class="input-control" type="text" id="name" name="name" placeholder="Full name" required maxlength="30"/>
         <input
-        class="input-control"
+          class="input-control"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Full name"
+          required
+          maxlength="30"
+        />
+        <input
+          class="input-control"
           type="email"
           id="email"
           name="email"
           placeholder="Email address"
-         required/>
-        <textarea class="textarea-input-control" name="content" id="content" required placeholder="Write me something..." maxlength="500"></textarea>
+          required
+        />
+        <textarea
+          class="textarea-input-control"
+          name="content"
+          id="content"
+          required
+          placeholder="Write me something..."
+          maxlength="500"
+        ></textarea>
         <button class="see-btn submit-btn" type="submit">Get in touch</button>
       </form>
     </section>
     <footer class="footer-container">
-
       <ul class="social-media-ul-footer">
         <li class="list-style-none">
           <img
@@ -250,7 +326,6 @@
           />
         </li>
       </ul>
-
     </footer>
   </body>
 </html>
