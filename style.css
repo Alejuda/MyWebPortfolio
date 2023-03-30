@@ -277,6 +277,7 @@
 
 .about-description {
   color: #f4f5f7;
+  max-width: 418px;
   font-size: 16px;
   font-weight: 400;
   font-family: "Inter", sans-serif;
@@ -462,6 +463,10 @@
   /* --------home--------- */
   .home {
     height: 800px;
+    background-image: url(./assets/icons/illustration-home-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% + 750px - 35vw) 90%;
+    background-size: 70%;
   }
 
   .home-text-container {
@@ -492,14 +497,13 @@
   }
 
   .home-svg {
-    left: 600px;
+    display: none;
   }
 
   /* --------about--------- */
   .about-container {
     padding: 130px 142px;
-    background-image: url(./assets/icons/illustration-about\ me-desktop1.svg);
-    background-position: 750px 100px;
+    background-position: calc(150% + 300px - 40vw) 30%;
   }
 
   .about-description {
@@ -647,11 +651,16 @@
     padding: 0 154px;
   }
 
-  .home-svg {
-    transform: scale(2.6);
-    bottom: 30%;
-    left: 1100px;
+  .about-container {
+    background-size: 50%;
+    background-position: calc(150% + 300px - 40vw) calc(30% - 10vw);
   }
+
+  /* .home-svg {
+    transform: scale(2.6);
+    bottom: 120vw;
+    left: 1100px;
+  } */
 }
 
 @media (min-width: 1232px) {
