@@ -46,3 +46,38 @@
   padding-left: 20px;
   font-weight: 600;
 }
+
+/* -------------------------- ANIMATIONS -------------------------- */
+/* ----- About me (Language/Frameworks/Skills) "listed items" ----- */
+.dni1 {
+    animation: 0.5s 1 linear nav1;
+}
+
+.dni2 {
+    animation: 1.5s 1 linear nav1;
+}
+
+.dni3 {
+    animation: 2s 1 linear nav1;
+}
+
+@keyframes nav1 {
+    0% {
+        font-size: 14px;
+    }
+    35% {
+        font-size: 15px;
+    }
+
+    55% {
+        font-size: 16px;
+    }
+
+    80% {
+        font-size: 17px;
+    }
+
+    100% {
+        font-size: 18px;
+    }
+}
