@@ -48,36 +48,55 @@
 }
 
 /* -------------------------- ANIMATIONS -------------------------- */
+
 /* ----- About me (Language/Frameworks/Skills) "listed items" ----- */
 .dni1 {
-    animation: 0.5s 1 linear nav1;
+  animation: expand 1s ease-in-out;
+  animation-delay: 2s;
 }
 
 .dni2 {
-    animation: 1.5s 1 linear nav1;
+  animation: expand 1s ease-in-out;
+  animation-delay: 3s;
 }
 
 .dni3 {
-    animation: 2s 1 linear nav1;
+  animation: expand 1s ease-in-out;
+  animation-delay: 4s;
 }
 
 @keyframes nav1 {
-    0% {
-        font-size: 14px;
-    }
-    35% {
-        font-size: 15px;
-    }
+  0% {
+    font-size: 14px;
+  }
 
-    55% {
-        font-size: 16px;
-    }
+  35% {
+    font-size: 15px;
+  }
 
-    80% {
-        font-size: 17px;
-    }
+  55% {
+    font-size: 16px;
+  }
 
-    100% {
-        font-size: 18px;
-    }
+  80% {
+    font-size: 17px;
+  }
+
+  100% {
+    font-size: 18px;
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
