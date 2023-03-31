@@ -51,10 +51,6 @@
   transition: all 100ms;
 }
 
-.desktop-nav-item:hover {
-  transform: scale(1.1);
-}
-
 .logo {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -97,6 +93,37 @@
   font-weight: 400;
   letter-spacing: 0.37px;
   font-family: "Crete Round", serif;
+}
+
+.apear-from-right {
+  animation: apear 700ms ease-in-out;
+}
+
+@keyframes apear {
+  from {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes apear-delay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.apear-delay {
+  opacity: 0;
+  animation: apear-delay 700ms ease-in-out;
+  animation-delay: 700ms;
+  animation-fill-mode: forwards;
 }
 
 .home-title-second {
@@ -229,7 +256,7 @@
   line-height: 24px;
   font-size: 17px;
   cursor: pointer;
-  transition: all 70ms;
+  transition: all 600ms;
 }
 
 .white {
@@ -493,8 +520,17 @@
 
   .social-media-ul {
     flex-direction: column;
+    align-items: normal;
     position: absolute;
   }
+
+  .media-icon:hover {
+    transform: scale(1.1);
+  }
+
+  .icon-hover:hover {
+    padding-left: 6px;
+  }  
 
   .home-svg {
     display: none;
@@ -655,12 +691,6 @@
     background-size: 50%;
     background-position: calc(150% + 300px - 40vw) calc(30% - 10vw);
   }
-
-  /* .home-svg {
-    transform: scale(2.6);
-    bottom: 120vw;
-    left: 1100px;
-  } */
 }
 
 @media (min-width: 1232px) {
