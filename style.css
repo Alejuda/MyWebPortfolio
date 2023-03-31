@@ -104,8 +104,9 @@
     transform: translateX(300px);
     opacity: 0;
   }
+
   to {
-    transform: translateX(0px);
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -114,6 +115,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -530,7 +532,7 @@
 
   .icon-hover:hover {
     padding-left: 6px;
-  }  
+  }
 
   .home-svg {
     display: none;

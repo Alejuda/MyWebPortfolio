@@ -1,46 +1,47 @@
 /* -------------------------- TRANSITIONS -------------------------- */
+
 /* ----- About me (Language/Frameworks/Skills) "listed items" ----- */
 .list-item {
-    transition: all 150ms;
+  transition: all 150ms;
 }
 
 .list-item:hover {
-    transform: translateX(10px);
+  transform: translateX(10px);
 }
 
 /* ----- Top Menu (Portfolio/About/Contact) ----- */
 .desktop-nav-item ::after {
-    content: "";
-    height: 1px;
-    width: 0;
-    display: block;
-    background-color: aliceblue;
-    transition: all 500ms;
+  content: "";
+  height: 1px;
+  width: 0;
+  display: block;
+  background-color: aliceblue;
+  transition: all 500ms;
 }
 
 .desktop-nav-item:hover ::after {
-    content: "";
-    height: 1px;
-    width: 100%;
-    display: block;
-    background-color: aliceblue;
+  content: "";
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: aliceblue;
 }
 
-.back-img{
-    transition: transform 200ms, box-shadow 200ms;
+.back-img {
+  transition: transform 200ms, box-shadow 200ms;
 }
 
 .back-img:hover {
-    transform: scale(1.02);
-    box-shadow: 10px 5px 5px rgb(153, 152, 152);
-  }
-  
-.input-control, 
-.textarea-input-control{
-    transition: all 150ms;
+  transform: scale(1.02);
+  box-shadow: 10px 5px 5px rgb(153, 152, 152);
 }
 
-  .input-control:hover,
+.input-control,
+.textarea-input-control {
+  transition: all 150ms;
+}
+
+.input-control:hover,
 .textarea-input-control:hover {
   padding-left: 20px;
   font-weight: 600;
