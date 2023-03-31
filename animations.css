@@ -1,0 +1,19 @@
+.back-img{
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+.back-img:hover {
+    transform: scale(1.02);
+    box-shadow: 10px 5px 5px rgb(153, 152, 152);
+  }
+  
+.input-control, 
+.textarea-input-control{
+    transition: all 150ms;
+}
+
+  .input-control:hover,
+.textarea-input-control:hover {
+  padding-left: 20px;
+  font-weight: 600;
+}
