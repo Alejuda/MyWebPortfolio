@@ -66,7 +66,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> comming soon
+See the live demo [here](https://alejuda.github.io/MyWebPortfolio/)!.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
