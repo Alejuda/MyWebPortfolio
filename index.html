@@ -299,7 +299,7 @@
         chat please get in touch.
       </h2>
       <form class="form" action="https://formspree.io/f/xbjezjap" method="post">
-        <input
+        <label for="name" class="hide">Full name</label><input
           class="input-control"
           type="text"
           id="name"
@@ -309,6 +309,7 @@
           maxlength="30"
           tabindex="0"
         />
+        <label for="email" class="hide">Email</label>
         <input
           class="input-control"
           type="email"
@@ -318,6 +319,7 @@
           required
           tabindex="0"
         />
+        <label for="content" class="hide">Write me something</label>
         <textarea
           class="textarea-input-control"
           name="content"
