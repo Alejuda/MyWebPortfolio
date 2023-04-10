@@ -38,7 +38,7 @@
   position: fixed;
   z-index: 200;
   left: 0;
-  height: 100vh;
+  height: calc(100vh - 57px);
   width: 100vw;
   background-color: #3c3a39;
   display: flex;
