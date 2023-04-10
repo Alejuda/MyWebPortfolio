@@ -11,8 +11,14 @@
   <body>
     <header class="header-container">
       <a class="link-none" href="#"><h2 class="logo">Ignacio Fino</h2></a>
-      <nav class="nav-toggle-btn">
+      <nav id="nav-toggle-btn" class="nav-toggle-btn">
         <img src="./assets/icons/Icon - Menu.svg" alt="Menu icon" />
+        <ul id="mobile-menu" class="mobile-menu show">
+          <img class="mobile-menu-close" src="./assets/icons/Icon - Cancel.svg" alt="Close menu">
+          <li class="list-element-mobile"> <a class="link-none mobile-menu-link" href="#portfolio-section"> Portfolio</li></a>
+          <li class="list-element-mobile"> <a class="link-none mobile-menu-link" href="#about-section"> About</li></a>
+          <li class="list-element-mobile"> <a class="link-none mobile-menu-link" href="#contact-section"> Contact</li></a>
+        </ul>
       </nav>
       <nav class="desktop-nav-container">
         <ul class="desktop-nav">
@@ -371,5 +377,7 @@
         </li>
       </ul>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
