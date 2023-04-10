@@ -32,7 +32,51 @@
 
 .nav-toggle-btn:hover {
   cursor: pointer;
-  transform: scale(1.2);
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  height: calc(100vh - 57px);
+  width: 100vw;
+  background-color: #3c3a39;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 16px;
+  list-style: none;
+  opacity: 0;
+  top: -200vh;
+  transition: top 0.3s;
+}
+
+.show {
+  opacity: 1;
+  top: 0;
+  cursor: auto;
+}
+
+.mobile-menu-close {
+  align-self: flex-end;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.mobile-menu-link {
+  color: #fff5e1;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.list-element-mobile {
+  padding: 15px 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #6f6c6b;
+  width: 100%;
 }
 
 .desktop-nav-container {
