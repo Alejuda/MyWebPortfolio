@@ -40,7 +40,7 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -65,20 +65,17 @@
 }
 
 .mobile-menu-link {
-  color: #FFF5E1;
+  color: #fff5e1;
   font-family: "Inter", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
- 
-  
-  
 }
 
 .list-element-mobile {
   padding: 15px 24px;
   margin-bottom: 24px;
-  border-bottom: 1px solid #6F6C6B;
+  border-bottom: 1px solid #6f6c6b;
   width: 100%;
 }
 
