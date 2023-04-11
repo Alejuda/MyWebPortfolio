@@ -322,11 +322,23 @@
 }
 
 .back-img {
-  background-image: url(./assets/img/Img\ Placeholder2.png);
+  background-image: url(./assets/icons/Img\ Placeholder-1-desktop.png);
   background-position: center;
   background-size: cover;
   height: 435px;
   justify-content: flex-end;
+}
+
+.Website {
+  background-image: url(./assets/icons/Img\ Placeholder-3-desktop.png);
+}
+
+.Profesional {
+  background-image: url(./assets/img/Img\ Placeholder2.png);
+}
+
+.Data {
+  background-image: url(./assets/icons/Img\ Placeholder-2-desktop.png);
 }
 
 .about-container {
@@ -673,7 +685,7 @@
 
   .second-work {
     justify-content: end;
-    background-image: url(./assets/icons/Img\ Placeholder-1-desktop.png);
+    /* background-image: url(./assets/icons/Img\ Placeholder-1-desktop.png); */
   }
 
   .back-img {
@@ -684,10 +696,6 @@
 
   .padding-0 {
     padding: 0;
-  }
-
-  .img-availability {
-    background-image: url(./assets/icons/Img\ Placeholder-2-desktop.png);
   }
 
   /* --------form responsive--------- */
