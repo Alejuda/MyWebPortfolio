@@ -110,7 +110,7 @@ works.map((work) => {
 });
 
 function showModule(id) {
-  if (id === 0) {return};
+  if (id === 0) { return; }
   const modal = document.getElementById('modal-container');
   const modalTitle = document.getElementById('modal-title');
   const habilities = document.getElementById('habilities-container');
