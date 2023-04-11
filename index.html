@@ -12,13 +12,29 @@
     <header class="header-container">
       <a class="link-none" href="#"><h2 class="logo">Ignacio Fino</h2></a>
       <nav id="nav-toggle-btn" class="nav-toggle-btn">
-          <img src="./assets/icons/Icon - Menu.svg" alt="Menu icon" />
-          <ul id="mobile-menu" class="mobile-menu show">
-           <img class="mobile-menu-close" src="./assets/icons/Icon - Cancel.svg" alt="Close menu">
-           <li class="list-element-mobile"> <a class="link-none mobile-menu-link" href="#portfolio-section"> Portfolio</a></li>
-           <li class="list-element-mobile"> <a class="link-none mobile-menu-link" href="#about-section"> About</a></li>
-           <li class="list-element-mobile"> <a class="link-none mobile-menu-link" href="#contact-section"> Contact</a></li>
-          </ul>
+        <img src="./assets/icons/Icon - Menu.svg" alt="Menu icon" />
+        <ul id="mobile-menu" class="mobile-menu show">
+          <img
+            class="mobile-menu-close"
+            src="./assets/icons/Icon - Cancel.svg"
+            alt="Close menu"
+          />
+          <li class="list-element-mobile">
+            <a class="link-none mobile-menu-link" href="#portfolio-section">
+              Portfolio</a
+            >
+          </li>
+          <li class="list-element-mobile">
+            <a class="link-none mobile-menu-link" href="#about-section">
+              About</a
+            >
+          </li>
+          <li class="list-element-mobile">
+            <a class="link-none mobile-menu-link" href="#contact-section">
+              Contact</a
+            >
+          </li>
+        </ul>
       </nav>
       <nav class="desktop-nav-container">
         <ul class="desktop-nav">
@@ -102,6 +118,41 @@
         alt=""
       />
     </section>
+
+    <div id="modal-container" class="modal-container">
+      <div class="modal">
+        <div class="modal-title">
+          <h2 id="modal-title" class="modal-title-text"></h2>
+          <img
+            id="modal-close-btn"
+            class="modal-title-icon"
+            src="./assets/icons/Icon - Cancel.svg"
+            alt="close"
+          />
+        </div>
+        <div id="habilities-container" class="habilities-container"></div>
+        <div class="flex-row">
+          <img
+            id="modal-img"
+            class="modal-img"
+            alt="work preview image"
+          />
+          <div class="modal-description">
+            <p id="modal-description" class="modal-text"></p>
+            <div class="modal-links">
+              <a id="modal-live-link" class="link-btn" href="#"
+                >See live <img src="./assets/icons/Icon - Export.svg" alt=""
+              /></a>
+              <a id="modal-source-link" class="link-btn" href="#"
+                >See source
+                <img src="./assets/icons/Icon -GitHub-white.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="works-container" id="portfolio-section">
       <div class="work-title-container">
         <h2 class="section-title">My Recent Works</h2>
@@ -134,11 +185,11 @@
 
             <!-- /* ----------------------- */ -->
 
-            <button type="button" class="see-btn">See project</button>
+            <button onclick="showModule(6)" type="button" class="see-btn">See project</button>
           </div>
         </div>
 
-        <div class="card-container back-img second-work padding-0">
+        <div onclick="showModule(7)"  class="card-container back-img second-work padding-0">
           <div class="text-container margin-x-13 display-none-desktop">
             <h3 class="card-title white">Profesional Art Printing Data</h3>
             <p class="card-description white">
@@ -214,7 +265,8 @@
         chat please get in touch.
       </h2>
       <form class="form" action="https://formspree.io/f/xbjezjap" method="post">
-        <label for="name" class="hide">Full name</label><input
+        <label for="name" class="hide">Full name</label
+        ><input
           class="input-control"
           type="text"
           id="name"
@@ -244,7 +296,9 @@
           maxlength="500"
           tabindex="0"
         ></textarea>
-        <button class="see-btn submit-btn" type="submit" tabindex="0">Get in touch</button>
+        <button class="see-btn submit-btn" type="submit" tabindex="0">
+          Get in touch
+        </button>
       </form>
     </section>
     <footer class="footer-container">
