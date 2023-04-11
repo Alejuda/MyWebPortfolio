@@ -1,85 +1,85 @@
-const menuBtn = document.getElementById("nav-toggle-btn");
-const mobileMenu = document.getElementById("mobile-menu");
-mobileMenu.classList.remove("show");
+const menuBtn = document.getElementById('nav-toggle-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenu.classList.remove('show');
 
-menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("show");
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('show');
 });
 
 // works container refactorisation
 
-let worksContainer = document.getElementById("works-container");
+const worksContainer = document.getElementById('works-container');
 
 const works = [
   {
     id: 1,
-    title: "Data Dashboard Healthcare",
+    title: 'Data Dashboard Healthcare',
     content:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    habilities: ["HTML", "Bootstrap", "Ruby"],
-    img: "./assets/icons/Img Placeholder-2-desktop.png",
-    liveLink: "#",
-    sourceLink: "#",
+    habilities: ['HTML', 'Bootstrap', 'Ruby'],
+    img: './assets/icons/Img Placeholder-2-desktop.png',
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
     id: 2,
-    title: "Website Portfolio",
+    title: 'Website Portfolio',
     content:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    habilities: ["HTML", "Bootstrap", "Ruby"],
-    img: "./assets/icons/Img Placeholder-3-desktop.png",
-    liveLink: "#",
-    sourceLink: "#",
+    habilities: ['HTML', 'Bootstrap', 'Ruby'],
+    img: './assets/icons/Img Placeholder-3-desktop.png',
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
     id: 3,
-    title: "Profesional Art Printing Data More",
+    title: 'Profesional Art Printing Data More',
     content:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    habilities: ["HTML", "Bootstrap", "Ruby"],
-    img: "./assets/img/Img Placeholder2.png",
-    liveLink: "#",
-    sourceLink: "#",
+    habilities: ['HTML', 'Bootstrap', 'Ruby'],
+    img: './assets/img/Img Placeholder2.png',
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
     id: 4,
-    title: "Data Dashboard Healthcare",
+    title: 'Data Dashboard Healthcare',
     content:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    habilities: ["HTML", "Bootstrap", "Ruby"],
-    img: "./assets/icons/Img Placeholder-2-desktop.png",
-    liveLink: "#",
-    sourceLink: "#",
+    habilities: ['HTML', 'Bootstrap', 'Ruby'],
+    img: './assets/icons/Img Placeholder-2-desktop.png',
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
     id: 5,
-    title: "Website Portfolio",
+    title: 'Website Portfolio',
     content:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    habilities: ["HTML", "Bootstrap", "Ruby"],
-    img: "./assets/icons/Img Placeholder-3-desktop.png",
-    liveLink: "#",
-    sourceLink: "#",
+    habilities: ['HTML', 'Bootstrap', 'Ruby'],
+    img: './assets/icons/Img Placeholder-3-desktop.png',
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
     id: 6,
-    title: "Multi-Post stories",
+    title: 'Multi-Post stories',
     content:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    habilities: ["CSS", "HTML", "Bootstrap", "Ruby"],
-    img: "./assets/img/Img Placeholder.png",
-    liveLink: "#",
-    sourceLink: "#",
+    habilities: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+    img: './assets/img/Img Placeholder.png',
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
     id: 7,
-    title: "Profesional Art Printing Data More",
+    title: 'Profesional Art Printing Data More',
     content:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    habilities: ["CSS", "HTML", "Ruby"],
-    img: "./assets/icons/Img Placeholder-1-desktop.png",
-    liveLink: "#",
-    sourceLink: "#",
+    habilities: ['CSS', 'HTML', 'Ruby'],
+    img: './assets/icons/Img Placeholder-1-desktop.png',
+    liveLink: '#',
+    sourceLink: '#',
   },
 ];
 
@@ -87,8 +87,8 @@ works.map((work) => {
   if (work.id <= 5) {
     worksContainer.innerHTML += `
   <div onclick="showModule(${work.id})" class="card-container back-img ${
-      work.title.split(" ")[0]
-    }" tabindex="0" id="${work.id}">
+  work.title.split(' ')[0]
+}" tabindex="0" id="${work.id}">
     <div class="text-container margin-x-13">
       <h3 class="card-title white">
         ${work.title}
@@ -106,33 +106,34 @@ works.map((work) => {
   </div>
   `;
   }
+  return worksContainer.innerHTML;
 });
 
 function showModule(id) {
-  const modal = document.getElementById("modal-container");
-  const modalTitle = document.getElementById("modal-title");
-  const habilities = document.getElementById("habilities-container");
-  const modalImg = document.getElementById("modal-img");
-  const modalDesc = document.getElementById("modal-description");
-  const liveLink = document.getElementById("modal-live-link");
-  const sourceLink = document.getElementById("modal-source-link");
-  const closeModal = document.getElementById("modal-close-btn");
+  const modal = document.getElementById('modal-container');
+  const modalTitle = document.getElementById('modal-title');
+  const habilities = document.getElementById('habilities-container');
+  const modalImg = document.getElementById('modal-img');
+  const modalDesc = document.getElementById('modal-description');
+  const liveLink = document.getElementById('modal-live-link');
+  const sourceLink = document.getElementById('modal-source-link');
+  const closeModal = document.getElementById('modal-close-btn');
 
   works[id - 1].habilities.forEach((hab) => {
     habilities.innerHTML += `<div class="habilitie">${hab}</div>`;
   });
 
-  liveLink.addEventListener("click", () => {
-    modal.style.left = "100vw";
-    habilities.innerHTML = "";
+  liveLink.addEventListener('click', () => {
+    modal.style.left = '100vw';
+    habilities.innerHTML = '';
   });
-  sourceLink.addEventListener("click", () => {
-    modal.style.left = "100vw";
-    habilities.innerHTML = "";
+  sourceLink.addEventListener('click', () => {
+    modal.style.left = '100vw';
+    habilities.innerHTML = '';
   });
-  closeModal.addEventListener("click", () => {
-    modal.style.left = "100vw";
-    habilities.innerHTML = "";
+  closeModal.addEventListener('click', () => {
+    modal.style.left = '100vw';
+    habilities.innerHTML = '';
   });
 
   modalTitle.innerHTML = `${works[id - 1].title}`;
@@ -141,5 +142,7 @@ function showModule(id) {
   liveLink.href = `${works[id - 1].liveLink}`;
   sourceLink.href = `${works[id - 1].sourceLink}`;
 
-  modal.style.left = "0";
+  modal.style.left = '0';
 }
+
+showModule(1);
