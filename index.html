@@ -132,11 +132,7 @@
         </div>
         <div id="habilities-container" class="habilities-container"></div>
         <div class="flex-row">
-          <img
-            id="modal-img"
-            class="modal-img"
-            alt="work preview image"
-          />
+          <img id="modal-img" class="modal-img" alt="work preview image" />
           <div class="modal-description">
             <p id="modal-description" class="modal-text"></p>
             <div class="modal-links">
@@ -185,11 +181,16 @@
 
             <!-- /* ----------------------- */ -->
 
-            <button onclick="showModule(6)" type="button" class="see-btn">See project</button>
+            <button onclick="showModule(6)" type="button" class="see-btn">
+              See project
+            </button>
           </div>
         </div>
 
-        <div onclick="showModule(7)"  class="card-container back-img second-work padding-0">
+        <div
+          onclick="showModule(7)"
+          class="card-container back-img second-work padding-0"
+        >
           <div class="text-container margin-x-13 display-none-desktop">
             <h3 class="card-title white">Profesional Art Printing Data</h3>
             <p class="card-description white">
@@ -264,7 +265,7 @@
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </h2>
-      <form class="form" action="https://formspree.io/f/xbjezjap" method="post">
+      <form class="form" action="https://formspree.io/f/xbjezjap" method="post" id="form">
         <label for="name" class="hide">Full name</label
         ><input
           class="input-control"
@@ -296,6 +297,7 @@
           maxlength="500"
           tabindex="0"
         ></textarea>
+        <i><small id="validation-message" class="validation-message"></small></i>
         <button class="see-btn submit-btn" type="submit" tabindex="0">
           Get in touch
         </button>
@@ -342,5 +344,6 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="formValidation.js"></script>
   </body>
 </html>
