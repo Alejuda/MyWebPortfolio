@@ -506,6 +506,16 @@
   font-family: "Inter", sans-serif;
 }
 
+.validation-message {
+  font-family: "Inter", sans-serif;
+  color: red;
+}
+
+.invalid-input {
+  outline: 2px solid rgb(255, 95, 95);
+  border-radius: 5px;
+}
+
 .submit-btn {
   font-size: 17px;
   padding: 12px;
