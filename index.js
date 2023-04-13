@@ -147,3 +147,17 @@ function showModule(id) {
 }
 
 showModule(0);
+
+const formContent = document.getElementById("form");
+const nameContent = document.getElementById("name");
+const emailContent = document.getElementById("email");
+const contentContent = document.getElementById("content");
+
+let userInfo = { name: "", email: "", content: "" };
+
+const getUserInfo = () => {
+  if (localStorage.getItem("userInfo")) {
+    userInfo = JSON.parse(localStorage.getItem("userInfo"));
+  }
+  return userInfo;
+};
