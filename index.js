@@ -161,3 +161,14 @@ const getUserInfo = () => {
   }
   return userInfo;
 };
+
+nameContent.value = getUserInfo().name;
+emailContent.value = getUserInfo().email;
+contentContent.value = getUserInfo().content;
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let userInfo = { name: nameContent.value, email: emailContent.value, contentContent: content.value };
+  localStorage.setItem("userInfo", JSON.stringify(userInfo));
+});
