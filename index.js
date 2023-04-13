@@ -147,3 +147,32 @@ function showModule(id) {
 }
 
 showModule(0);
+
+const formContent = document.getElementById('form');
+const nameContent = document.getElementById('name');
+const emailContent = document.getElementById('email');
+const contentContent = document.getElementById('content');
+
+let userInfo = { name: '', email: '', content: '' };
+
+const getUserInfo = () => {
+  if (localStorage.getItem('userInfo')) {
+    userInfo = JSON.parse(localStorage.getItem('userInfo'));
+  }
+  return userInfo;
+};
+
+nameContent.value = getUserInfo().name;
+emailContent.value = getUserInfo().email;
+contentContent.value = getUserInfo().content;
+
+formContent.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const userInfo = {
+    name: nameContent.value,
+    email: emailContent.value,
+    content: contentContent.value,
+  };
+  localStorage.setItem('userInfo', JSON.stringify(userInfo));
+});
