@@ -15,6 +15,7 @@ email.addEventListener('change', () => {
     errorMsj.innerText = 'Please do not use uppercase letters on your email.';
   } else {
     errorMsj.innerText = '';
+    email.classList.remove('invalid-input');
   }
 });
 
