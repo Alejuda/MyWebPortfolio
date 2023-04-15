@@ -126,15 +126,12 @@ function showModule(id) {
 
   liveLink.addEventListener('click', () => {
     modal.style.left = '100vw';
-    habilities.innerHTML = '';
   });
   sourceLink.addEventListener('click', () => {
     modal.style.left = '100vw';
-    habilities.innerHTML = '';
   });
   closeModal.addEventListener('click', () => {
     modal.style.left = '100vw';
-    habilities.innerHTML = '';
   });
 
   modalTitle.innerHTML = `${works[id - 1].title}`;
