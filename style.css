@@ -658,6 +658,10 @@
   color: #f55800;
 }
 
+.TODO{
+  background-image: url(./assets/img/back-todo-dark.png);
+}
+
 /* ------------- MODAL END   ------------- */
 
 @media (min-width: 768px) {
