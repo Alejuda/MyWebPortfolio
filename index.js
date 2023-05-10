@@ -18,8 +18,8 @@ const works = [
       "A productivity tool designed to help users manage their daily tasks and to-dos efficiently.",
     habilities: ['HTML', 'CSS', 'JavaScript'],
     img: './assets/img/img-placeholder-todo.png',
-    liveLink: 'https://alejuda.github.io/TODO-List/',
-    sourceLink: 'https://github.com/Alejuda/TODO-List',
+    liveLink: 'https://alejuda.github.io/TODO-List/dist/',
+    sourceLink: 'https://github.com/Alejuda/TODO-List/',
   },
   {
     id: 2,
