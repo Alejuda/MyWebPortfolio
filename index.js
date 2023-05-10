@@ -13,13 +13,13 @@ const worksContainer = document.getElementById('works-container');
 const works = [
   {
     id: 1,
-    title: 'Data Dashboard Healthcare',
+    title: 'TODO - List App',
     content:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    habilities: ['HTML', 'Bootstrap', 'Ruby'],
-    img: './assets/icons/Img Placeholder-2-desktop.png',
-    liveLink: '#',
-    sourceLink: '#',
+      "A productivity tool designed to help users manage their daily tasks and to-dos efficiently.",
+    habilities: ['HTML', 'CSS', 'JavaScript'],
+    img: './assets/img/img-placeholder-todo.png',
+    liveLink: 'https://alejuda.github.io/TODO-List/',
+    sourceLink: 'https://github.com/Alejuda/TODO-List',
   },
   {
     id: 2,
@@ -97,9 +97,9 @@ works.map((work) => {
         ${work.content}
       </p>
       <ul class="tags list-style-none">
-        <li class="tag-description-2">HTML</li>
-        <li class="tag-description-2">Bootstrap</li>
-        <li class="tag-description-2">Ruby</li>
+        <li class="tag-description-2">${work.habilities[0]}</li>
+        <li class="tag-description-2">${work.habilities[1]}</li>
+        <li class="tag-description-2">${work.habilities[2]}</li>
       </ul>
     </div>
     <button class="see-btn wide display-none-desktop"> See project </button>
@@ -134,7 +134,6 @@ function showModule(id) {
   });
   closeModal.addEventListener('click', () => {
     modal.style.left = '100vw';
-    habilities.innerHTML = '';
   });
 
   modalTitle.innerHTML = `${works[id - 1].title}`;
